@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Zombie" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Zombie" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="src/Engine" />
+					<Add directory="src/Texture" />
+					<Add directory="src/Physics" />
+					<Add directory="src/Objects" />
+					<Add directory="src/Character" />
+					<Add directory="src/Animation" />
+					<Add directory="src/Inputs" />
+					<Add directory="src/Timer" />
+					<Add directory="src/Map" />
+					<Add directory="src/Vendor/TinyXML" />
+					<Add directory="src/Camera" />
+					<Add directory="src/Collision" />
+					<Add directory="src/States" />
+					<Add directory="src/Property" />
+					<Add directory="src/Factory" />
+					<Add directory="src/Widgets" />
+					<Add directory="src/Weapons" />
+					<Add directory="src/Observer" />
+					<Add directory="src/Levels" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Zombie" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="src/Engine" />
+					<Add directory="src/Texture" />
+					<Add directory="src/Physics" />
+					<Add directory="src/Objects" />
+					<Add directory="src/Character" />
+					<Add directory="src/Animation" />
+					<Add directory="src/Inputs" />
+					<Add directory="src/Timer" />
+					<Add directory="src/Map" />
+					<Add directory="src/Camera" />
+					<Add directory="src/Collision" />
+					<Add directory="src/States" />
+					<Add directory="src/Property" />
+					<Add directory="src/Factory" />
+					<Add directory="src/Widgets" />
+					<Add directory="src/Weapons" />
+					<Add directory="src/Observer" />
+					<Add directory="src/Levels" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="C:/SDL2/SDL2-2.0.12/i686-w64-mingw32/include/SDL2" />
+			<Add directory="C:/SDL2/SDL2-2.0.12/x86_64-w64-mingw32/include/SDL2" />
+			<Add directory="C:/SDL2/SDL2_image-2.0.5/i686-w64-mingw32/include/SDL2" />
+		</Compiler>
+		<Linker>
+			<Add option="-lmingw32 -lSDL2main -lSDL2 -lSDL2_image" />
+			<Add directory="C:/SDL2/SDL2-2.0.12/i686-w64-mingw32/lib" />
+			<Add directory="C:/SDL2/SDL2-2.0.12/x86_64-w64-mingw32/lib" />
+			<Add directory="C:/SDL2/SDL2_image-2.0.5/i686-w64-mingw32/lib" />
+		</Linker>
+		<Unit filename="Main.cpp" />
+		<Unit filename="src/Animation/Animation.h" />
+		<Unit filename="src/Animation/SeqAnimation.cpp" />
+		<Unit filename="src/Animation/SeqAnimation.h" />
+		<Unit filename="src/Animation/SpriteAnimation.cpp" />
+		<Unit filename="src/Animation/SpriteAnimation.h" />
+		<Unit filename="src/Camera/Camera.cpp" />
+		<Unit filename="src/Camera/Camera.h" />
+		<Unit filename="src/Character/Soldier.cpp" />
+		<Unit filename="src/Character/Soldier.h" />
+		<Unit filename="src/Character/ZombieL1.cpp" />
+		<Unit filename="src/Character/ZombieL1.h" />
+		<Unit filename="src/Character/ZombieL2.cpp" />
+		<Unit filename="src/Character/ZombieL2.h" />
+		<Unit filename="src/Character/ZombieL3.cpp" />
+		<Unit filename="src/Character/ZombieL3.h" />
+		<Unit filename="src/Character/ZombieL4.cpp" />
+		<Unit filename="src/Character/ZombieL4.h" />
+		<Unit filename="src/Character/ZombieL5.cpp" />
+		<Unit filename="src/Character/ZombieL5.h" />
+		<Unit filename="src/Collision/CollisionHandler.cpp" />
+		<Unit filename="src/Collision/CollisionHandler.h" />
+		<Unit filename="src/Engine/Engine.cpp" />
+		<Unit filename="src/Engine/Engine.h" />
+		<Unit filename="src/Factory/ObjectFactory.cpp" />
+		<Unit filename="src/Factory/ObjectFactory.h" />
+		<Unit filename="src/Inputs/Input.cpp" />
+		<Unit filename="src/Inputs/Input.h" />
+		<Unit filename="src/Levels/LevelMgr.cpp" />
+		<Unit filename="src/Levels/LevelMgr.h" />
+		<Unit filename="src/Map/GameMap.h" />
+		<Unit filename="src/Map/Layer.h" />
+		<Unit filename="src/Map/MapParser.cpp" />
+		<Unit filename="src/Map/MapParser.h" />
+		<Unit filename="src/Map/TileLayer.cpp" />
+		<Unit filename="src/Map/TileLayer.h" />
+		<Unit filename="src/Objects/GameObject.cpp" />
+		<Unit filename="src/Objects/GameObject.h" />
+		<Unit filename="src/Objects/IObject.h" />
+		<Unit filename="src/Objects/Transform.h" />
+		<Unit filename="src/Observer/BatItem.cpp" />
+		<Unit filename="src/Observer/BatItem.h" />
+		<Unit filename="src/Observer/FlamethrowerCylinder.cpp" />
+		<Unit filename="src/Observer/FlamethrowerCylinder.h" />
+		<Unit filename="src/Observer/FlamethrowerItem.cpp" />
+		<Unit filename="src/Observer/FlamethrowerItem.h" />
+		<Unit filename="src/Observer/GunItem.cpp" />
+		<Unit filename="src/Observer/GunItem.h" />
+		<Unit filename="src/Observer/GunMagazineItem.cpp" />
+		<Unit filename="src/Observer/GunMagazineItem.h" />
+		<Unit filename="src/Observer/HealtBox.cpp" />
+		<Unit filename="src/Observer/HealtBox.h" />
+		<Unit filename="src/Observer/KnifeItem.cpp" />
+		<Unit filename="src/Observer/KnifeItem.h" />
+		<Unit filename="src/Observer/LevelEnd.cpp" />
+		<Unit filename="src/Observer/LevelEnd.h" />
+		<Unit filename="src/Observer/MachineGunItem.cpp" />
+		<Unit filename="src/Observer/MachineGunItem.h" />
+		<Unit filename="src/Observer/MachineGunMagazine.cpp" />
+		<Unit filename="src/Observer/MachineGunMagazine.h" />
+		<Unit filename="src/Observer/Observer.h" />
+		<Unit filename="src/Observer/Subject.cpp" />
+		<Unit filename="src/Observer/Subject.h" />
+		<Unit filename="src/Physics/BezierPaths.cpp" />
+		<Unit filename="src/Physics/BezierPaths.h" />
+		<Unit filename="src/Physics/Collider.h" />
+		<Unit filename="src/Physics/Mathematics.h" />
+		<Unit filename="src/Physics/RigidBody.h" />
+		<Unit filename="src/Physics/Vector2D.h" />
+		<Unit filename="src/Property/Health.h" />
+		<Unit filename="src/States/GameState.h" />
+		<Unit filename="src/States/Menu.cpp" />
+		<Unit filename="src/States/Menu.h" />
+		<Unit filename="src/States/Pause.cpp" />
+		<Unit filename="src/States/Pause.h" />
+		<Unit filename="src/States/Play.cpp" />
+		<Unit filename="src/States/Play.h" />
+		<Unit filename="src/States/Settings.cpp" />
+		<Unit filename="src/States/Settings.h" />
+		<Unit filename="src/States/StateMgr.cpp" />
+		<Unit filename="src/States/StateMgr.h" />
+		<Unit filename="src/Texture/TextureMgr.cpp" />
+		<Unit filename="src/Texture/TextureMgr.h" />
+		<Unit filename="src/Timer/Timer.cpp" />
+		<Unit filename="src/Timer/Timer.h" />
+		<Unit filename="src/Vendor/TinyXML/tinystr.cpp" />
+		<Unit filename="src/Vendor/TinyXML/tinystr.h" />
+		<Unit filename="src/Vendor/TinyXML/tinyxml.cpp" />
+		<Unit filename="src/Vendor/TinyXML/tinyxml.h" />
+		<Unit filename="src/Vendor/TinyXML/tinyxmlerror.cpp" />
+		<Unit filename="src/Vendor/TinyXML/tinyxmlparser.cpp" />
+		<Unit filename="src/Weapons/Arm.cpp" />
+		<Unit filename="src/Weapons/Arm.h" />
+		<Unit filename="src/Weapons/Bat.cpp" />
+		<Unit filename="src/Weapons/Bat.h" />
+		<Unit filename="src/Weapons/Bullet.cpp" />
+		<Unit filename="src/Weapons/Bullet.h" />
+		<Unit filename="src/Weapons/BulletHandler.cpp" />
+		<Unit filename="src/Weapons/BulletHandler.h" />
+		<Unit filename="src/Weapons/Claw.cpp" />
+		<Unit filename="src/Weapons/Claw.h" />
+		<Unit filename="src/Weapons/Flamethrower.cpp" />
+		<Unit filename="src/Weapons/Flamethrower.h" />
+		<Unit filename="src/Weapons/Gun.cpp" />
+		<Unit filename="src/Weapons/Gun.h" />
+		<Unit filename="src/Weapons/Knife.cpp" />
+		<Unit filename="src/Weapons/Knife.h" />
+		<Unit filename="src/Weapons/MachineGun.cpp" />
+		<Unit filename="src/Weapons/MachineGun.h" />
+		<Unit filename="src/Weapons/Puddle.cpp" />
+		<Unit filename="src/Weapons/Puddle.h" />
+		<Unit filename="src/Weapons/Snot.cpp" />
+		<Unit filename="src/Weapons/Snot.h" />
+		<Unit filename="src/Weapons/Weapon.h" />
+		<Unit filename="src/Widgets/Button.cpp" />
+		<Unit filename="src/Widgets/Button.h" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
